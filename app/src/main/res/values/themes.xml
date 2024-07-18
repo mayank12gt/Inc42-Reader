@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Inc42Reader" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#CF2E2E</item>
+        <item name="android:colorBackground">@color/white_2</item>
+        <item name="colorSurface">@color/white_1</item>
+        <item name="colorSurfaceVariant">@color/white_3</item>
+        <item name="android:statusBarColor">?android:attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimaryDark">?android:attr/colorPrimary</item>
+        <item name="bottomNavigationStyle">@style/BottomNavigationView</item>
+        <item name="android:searchViewStyle">@style/SearchViewStyle</item>
+        <item name="materialButtonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+    <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/TextAppearance14</item>
+
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@drawable/search_bar_bg</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+       <item name="queryBackground">@color/white</item>
+        <item name="android:queryBackground">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance20</item>
+        <item name="android:colorControlActivated">?attr/colorPrimary</item>
+        <item name="tint">?attr/colorPrimary</item>
+        <item name="android:editTextColor">?attr/colorPrimary</item>
+
+
+    </style>
+
+
+
+
+    <style name="TextAppearance14" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+
+    <style name="TextAppearance16" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+    <style name="TextAppearance16Bold" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+    <style name="TextAppearance18Bold" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="TextAppearance20" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <style name="TextAppearance20Bold" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">20sp</item>
+
+
+    </style>
+
+    <style name="TextAppearance24" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+
+
+
+    <style name="Theme.Inc42Reader" parent="Base.Theme.Inc42Reader" />
+
+
+
+
+
+
+
+</resources>

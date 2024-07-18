@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+
+    app:cardCornerRadius="8dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+app:cardElevation="1dp"
+
+
+
+
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+
+
+
+    >
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/post_Image"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+
+
+        android:scaleType="centerCrop"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:riv_corner_radius="8dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_title"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:layout_marginTop="8dp"
+        android:lineHeight="20dp"
+
+        android:textAppearance="@style/TextAppearance20"
+        tools:text="Groww To Discontinue US Stocks Offering Due To ‘Complications’"
+        app:layout_constraintTop_toBottomOf="@id/post_Image"
+        app:layout_constraintStart_toStartOf="@id/post_Image"
+        app:layout_constraintEnd_toEndOf="@id/post_Image"/>
+
+    <TextView
+        android:id="@+id/post_pub_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="4dp"
+        android:includeFontPadding="false"
+        android:textAppearance="@style/TextAppearance16"
+        app:layout_constraintEnd_toStartOf="@+id/bookmark_btn"
+        app:layout_constraintStart_toStartOf="@id/post_title"
+        app:layout_constraintTop_toBottomOf="@id/post_title"
+        tools:text="23 Jan, 2024" />
+
+    <ImageButton
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginHorizontal="4dp"
+        android:src="@drawable/bookmark_add_icon"
+        android:id="@+id/bookmark_btn"
+        android:visibility="gone"
+        android:background="@drawable/bookmark_btn_bg"
+        app:layout_constraintBottom_toBottomOf="@id/post_author"
+        app:layout_constraintTop_toBottomOf="@id/post_title"
+        app:layout_constraintEnd_toEndOf="@id/post_title"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/post_pub_date"
+        app:layout_constraintStart_toStartOf="@id/post_pub_date"
+        app:layout_constraintEnd_toEndOf="@id/post_pub_date"
+        android:id="@+id/post_author"
+
+        tools:text="Suprita Anupam"
+        android:layout_marginTop="1dp"
+        android:includeFontPadding="false"
+        android:textAppearance="@style/TextAppearance16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="2dp"
+      />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

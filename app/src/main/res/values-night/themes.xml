@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Inc42Reader" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#BA2A2A</item>
+        <item name="colorOnPrimary">?attr/colorPrimary</item>
+        <item name="colorSurface">@color/black</item>
+        <item name="android:colorBackground">@color/black_3</item>
+
+        <item name="colorSurfaceVariant">@color/black_4</item>
+    </style>
+
+    <style name="TextAppearance14" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+
+    <style name="TextAppearance16" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+    <style name="TextAppearance16Bold" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+    <style name="TextAppearance18Bold" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="TextAppearance20" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <style name="TextAppearance20Bold" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">20sp</item>
+
+
+    </style>
+
+    <style name="TextAppearance24" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+
+
+
+    <style name="Theme.Inc42Reader" parent="Base.Theme.Inc42Reader" />
+
+
+
+</resources>

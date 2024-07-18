@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.PostFragment"
+    android:background="@color/white_2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="280dp"
+                android:id="@+id/post_image"
+
+
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/post_loading_indicator"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:indeterminate="true"
+                android:indeterminateBehavior="cycle"
+                android:visibility="gone"
+                app:indicatorColor="?attr/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:trackColor="@color/white" />
+
+            <TextView
+                android:id="@+id/post_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance20"
+
+                app:layout_constraintEnd_toEndOf="@+id/post_image"
+                app:layout_constraintStart_toStartOf="@id/post_image"
+                app:layout_constraintTop_toBottomOf="@id/post_image"
+                tools:text="Groww To Discontinue US Stocks Offering Due To ‘Complications’" />
+
+
+            <TextView
+                android:id="@+id/post_pub_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginTop="8dp"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance18Bold"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintEnd_toStartOf="@+id/bookmark_btn"
+                app:layout_constraintStart_toStartOf="@id/post_title"
+                app:layout_constraintTop_toBottomOf="@id/post_title"
+                tools:text="23 Jan, 2024" />
+
+            <ImageButton
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginHorizontal="4dp"
+                android:src="@drawable/bookmark_add_icon"
+                android:id="@+id/bookmark_btn"
+                android:visibility="gone"
+                android:background="@drawable/bookmark_btn_bg"
+                app:layout_constraintBottom_toBottomOf="@id/post_author"
+                app:layout_constraintTop_toBottomOf="@id/post_title"
+                app:layout_constraintEnd_toEndOf="@id/post_title"/>
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/post_pub_date"
+                app:layout_constraintStart_toStartOf="@id/post_pub_date"
+                app:layout_constraintEnd_toStartOf="@id/bookmark_btn"
+                android:id="@+id/post_author"
+                android:textAlignment="center"
+                tools:text="Suprita Anupam"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:textAppearance="@style/TextAppearance18Bold"
+                android:fontFamily="@font/poppins_medium"
+
+                android:layout_marginBottom="2dp"
+                />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/post_author"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/divider_1"
+                android:layout_marginTop="4dp"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                app:layout_constraintTop_toBottomOf="@id/divider_1"
+                app:layout_constraintStart_toStartOf="@id/post_author"
+                app:layout_constraintEnd_toEndOf="@id/post_title"
+                android:id="@+id/post_content"
+                android:textAlignment="viewStart"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies dolor sit amet nulla venenatis, eu dictum sapien porttitor. In posuere nec libero a rhoncus. Quisque gravida nulla in malesuada posuere. Sed sem libero, rhoncus sit amet sagittis ac, consectetur vel nisl. Maecenas non mi enim. Nam fringilla nulla at hendrerit consequat. Nulla porttitor in nisi ut fringilla. Integer varius aliquam leo, quis fringilla tortor tempus quis. Morbi eros odio, pretium id aliquam nec, hendrerit eget dolor. Proin lacinia sapien quam, sit amet condimentum eros malesuada vitae.
+
+Nam dapibus aliquam metus. Nulla vehicula dui id fermentum semper. Maecenas ultricies magna efficitur justo consequat, vitae auctor urna interdum. Sed dapibus efficitur felis nec consectetur. Vivamus lacinia risus metus, quis congue velit feugiat at. Integer ornare sapien ex, commodo mollis mi congue sed. Nam nec massa eu augue viverra elementum vitae elementum ante. Mauris turpis mauris, condimentum ut faucibus vulputate, efficitur cursus felis. In venenatis finibus magna, sit amet luctus nulla vestibulum sed. Phasellus blandit, ligula a suscipit consectetur, leo metus sollicitudin sem, sed pulvinar libero metus et quam. Etiam maximus rutrum lectus et vestibulum. Aenean interdum ultrices nisl vitae tincidunt. Nunc faucibus vestibulum sapien, lacinia imperdiet libero varius vel. Morbi et massa aliquet, molestie turpis eget, volutpat sapien. Curabitur lobortis metus et lorem lobortis feugiat. Sed accumsan quam ut rutrum porta.
+
+Pellentesque tincidunt molestie odio vitae malesuada. Sed auctor nisi massa, ac luctus orci faucibus in. Morbi blandit suscipit sapien, in vestibulum risus efficitur sed. Fusce ultrices non tortor eget viverra. Maecenas luctus odio quis metus consequat gravida. Vestibulum sit amet tristique orci, vitae elementum libero. Pellentesque vel maximus lacus, ut fringilla nibh. Nulla ultrices sem sem, et laoreet leo elementum ac. Integer tincidunt turpis nec ex facilisis faucibus. Suspendisse vel ex lectus. Pellentesque hendrerit diam auctor, malesuada nulla vel, blandit ex. Fusce mollis, massa id interdum interdum, nisi eros condimentum diam, et efficitur nisi ante a quam. Vestibulum quis nulla quam. Nulla eu dictum nisl, vel scelerisque dolor.
+
+Maecenas tincidunt elit interdum justo vestibulum fermentum. Ut rutrum massa sed dignissim convallis. Vivamus non justo vel tellus porta lobortis. Sed et porttitor leo, vel lobortis mi. Fusce lorem ipsum, posuere et justo vitae, rutrum consectetur nisl. Etiam vehicula pharetra arcu in iaculis. Quisque placerat, augue in cursus finibus, odio nisi sodales justo, sit amet feugiat est felis vel massa. Sed egestas ante arcu, eget faucibus augue lacinia ut. Fusce finibus enim ac turpis varius egestas. Curabitur blandit dignissim turpis id pharetra.
+
+Suspendisse luctus mi vitae malesuada vestibulum. Vivamus maximus nisi nec mauris rutrum posuere. Cras quis lobortis purus. Mauris a turpis non urna blandit vulputate. Vivamus ut nisl at nisi luctus pulvinar id ac lectus. Cras pretium scelerisque arcu, a ullamcorper metus posuere a. Donec dignissim turpis quis velit finibus porttitor. Donec porttitor lectus sit amet augue bibendum bibendum. Vivamus orci leo, iaculis in hendrerit sed, finibus vel dolor. Vivamus laoreet augue sapien, et faucibus enim viverra non. In efficitur tortor nisi, a dictum turpis rutrum vel. Phasellus eleifend justo eu lectus consequat, sit amet ultrices dolor rutrum. In vitae ligula quis eros malesuada efficitur. Fusce hendrerit massa et libero rhoncus, ac congue leo aliquam. Integer semper lorem vitae feugiat porta. Morbi volutpat, nisi eget fringilla suscipit, massa felis finibus urna, ut rutrum quam nunc quis augue.
+
+Mauris mattis augue in maximus pellentesque. Vestibulum pellentesque turpis a faucibus commodo. Morbi quis felis velit. Ut eu feugiat magna. Aliquam dictum pharetra ex, ac placerat tortor ultrices quis. Fusce dictum massa mi, sit amet maximus eros ultrices vel. Mauris in iaculis magna. Maecenas ullamcorper risus in posuere viverra. Nulla eu arcu eget orci suscipit venenatis ut a neque. Nunc ullamcorper eget tortor quis tempor.
+
+Vestibulum dui erat, tincidunt in viverra non, rutrum faucibus turpis. Sed est orci, rutrum at molestie at, venenatis eget tellus. Proin blandit porttitor dui ut suscipit. Praesent auctor tortor dictum felis lacinia, at dignissim nunc aliquet. Nullam id ante nec nulla aliquam fermentum. Vivamus a iaculis ligula. Maecenas tempus quis purus a fermentum. Maecenas consectetur turpis id consectetur venenatis.
+
+Duis consequat, neque a porta congue, metus enim tempor eros, at congue nisi purus vel leo. Nam fringilla sapien quam. Nam vestibulum tincidunt consequat. Donec in varius felis. Aenean a mauris velit. Nulla urna eros, pellentesque nec consequat eget, posuere non lectus. Pellentesque nec lectus diam. Quisque pharetra mauris nec ligula hendrerit rutrum. Nunc est libero, scelerisque vitae nisi sit amet, facilisis ornare turpis. Mauris rutrum nisl vel lorem iaculis posuere. Cras rhoncus felis sit amet ex lacinia, ut tincidunt dolor aliquam. In accumsan ante nec condimentum rutrum. Sed sapien enim, aliquam vel laoreet vel, sagittis sit amet urna.
+
+Nunc egestas enim tortor. Aenean bibendum libero libero, non posuere purus varius non. Vestibulum auctor augue et felis suscipit varius. In consectetur tristique consectetur. Integer ultricies risus sed porttitor auctor. Nulla gravida malesuada suscipit. Suspendisse ornare sapien eu vestibulum congue. Ut leo lorem, pretium id tempus at, hendrerit ac sapien. Suspendisse semper aliquam augue eget porta. Sed congue nunc eros, vitae tincidunt diam suscipit et. Proin id fringilla arcu.
+
+Aliquam molestie, nulla a aliquet dignissim, tellus justo viverra dolor, vitae porta leo lectus eu lorem. Maecenas commodo diam tincidunt, bibendum erat et, sollicitudin metus. Nam lobortis mollis tortor quis faucibus. Nulla vulputate felis lorem, eget laoreet dolor pharetra id. Praesent et purus dui. Ut in lacinia risus. Aliquam interdum tellus ligula, quis eleifend sem viverra ac. Vivamus lacus neque, luctus eget magna ut, volutpat lacinia diam. Proin vitae mi sit amet erat viverra rutrum at at erat. Integer condimentum, purus ac lacinia viverra, justo erat vulputate eros, vestibulum blandit magna velit sit amet massa. Vestibulum sit amet suscipit quam.
+
+In fermentum augue eu tellus pulvinar, a convallis risus molestie. Nulla malesuada euismod mauris id porta. Nunc nec nibh sit amet erat commodo pulvinar. Vivamus ac nisl nisi. Praesent suscipit efficitur leo, vel dignissim libero maximus vitae. Duis tempor augue sed libero pretium tincidunt. Curabitur iaculis dictum odio. Pellentesque pulvinar sem sem, eget egestas libero porttitor et. Praesent tincidunt mauris eros, eget venenatis lacus tempus in. Phasellus porta fringilla tellus, in vulputate velit suscipit sit amet. Praesent hendrerit ac massa dictum pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut sed ornare neque, non aliquam eros. Ut tincidunt felis massa, ac sagittis nibh feugiat eu. Aliquam erat volutpat."
+                android:layout_marginTop="8dp"
+                android:includeFontPadding="false"
+                android:textAppearance="@style/TextAppearance18Bold"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="0dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

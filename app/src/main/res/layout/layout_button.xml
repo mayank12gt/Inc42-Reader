@@ -1,0 +1,31 @@
+<!-- Layout for the button item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="Load More"
+        android:layout_marginEnd="4dp"
+        android:id="@+id/load_more_btn"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        app:iconGravity="textStart"
+        android:fontFamily="@font/poppins_semibold"
+        app:cornerRadius="8dp"
+        />
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:trackColor="@color/white"
+        app:indicatorColor="?attr/colorPrimary"
+        android:id="@+id/posts_loading_more_indicator"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:visibility="gone"
+         />
+</LinearLayout>

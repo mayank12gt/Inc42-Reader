@@ -1,0 +1,26 @@
+<!-- Layout for the button item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:id="@+id/add_feeds_btn"
+        app:cornerRadius="0dp"
+        android:insetBottom="0dp"
+        app:icon="@drawable/follow_icon"
+        android:backgroundTint="?attr/colorSurfaceVariant"
+        app:iconTint="?attr/colorPrimary"
+        app:iconSize="32dp"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp" />
+
+
+</LinearLayout>
